@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 anos de nós ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff8f6;
+    color: #624851;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(145deg, #fff7f4, #f9e3e7, #f5d6df);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(50px, 9vw, 85px);
+    color: #754354;
+    margin: 25px 0;
+}
+
+.hero p {
+    line-height: 1.9;
+    color: #805d68;
+}
+
+.heart {
+    font-size: 40px;
+    color: #d8798d;
+    margin: 25px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    50% { transform: scale(1.2); }
+}
+
+.button {
+    display: inline-block;
+    background: #d8798d;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 75px 22px;
+}
+
+.tag {
+    text-align: center;
+    color: #d8798d;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #754354;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.intro {
+    text-align: center;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    color: #856570;
+}
+
+.gallery {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #75405220;
+}
+
+.photo-area {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 3 / 4;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #f9e5e8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #754354;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.arrow {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #f4dce2;
+    color: #81495b;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.letter {
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    margin-top: 90px;
+    box-shadow: 0 10px 40px #75405215;
+}
+
+.letter h2 {
+    text-align: left;
+}
+
+.letter p {
+    line-height: 2;
+    margin-bottom: 18px;
+    color: #70545e;
+}
+
+.signature {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #d8798d;
+    margin-top: 25px;
+}
+
+.ending {
+    text-align: center;
+    margin: 80px 0 20px;
+}
+
+.ending p {
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #ad818c;
+}
+
+@media(max-width: 600px) {
+    .photo-area { height: 300px; }
+    .letter { padding: 25px; }
+    h2 { font-size: 32px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <p>UMA HISTÓRIA QUE EU AMO VIVER</p>
+
+        <h1>3 anos de<br>nós dois</h1>
+
+        <p>
+            Três anos de carinho, risadas, aprendizados
+            e momentos que guardo com todo o amor do mundo.
+        </p>
+
+        <div class="heart">♥</div>
+
+        <a href="#memorias" class="button">
+            Reviver nossas lembranças ↓
+        </a>
+    </div>
+</header>
+
+<main>
+
+<section id="memorias">
+
+    <div class="tag">Pequenos grandes momentos</div>
+
+    <h2>Nossas memórias 📸</h2>
+
+    <p class="intro">
+        Cada foto guarda um pedacinho da nossa história.
+        Aqui estão algumas das lembranças mais especiais
+        que construímos juntos.
+    </p>
+
+    <div class="gallery">
+
+        <div class="photo-area">
+            <img id="photo" src="fotos/foto1.jpg" alt="Nossa foto">
+        </div>
+
+        <div class="caption" id="caption">
+            Um pedacinho da nossa história ❤️
+        </div>
+
+    </div>
+
+    <div class="controls">
+        <button class="arrow" onclick="previous()">‹</button>
+        <button class="arrow" onclick="next()">›</button>
+    </div>
+
+</section>
+
+<section class="letter">
+
+    <div class="tag">De coração, para você</div>
+
+    <h2>Minha declaração ❤️</h2>
+
+    <p>
+        Meu amor, hoje completamos 3 anos juntos, e eu fico
+        pensando em quanta coisa bonita já vivemos. São três
+        anos de histórias, conversas, risadas, abraços,
+        aprendizados e momentos que vou guardar para sempre.
+    </p>
+
+    <p>
+        Talvez eu não consiga colocar em palavras tudo o que
+        você significa para mim, mas quero que saiba o quanto
+        sou feliz por ter você ao meu lado. Você tornou meus
+        dias mais especiais e me mostrou que o amor também
+        está nas pequenas coisas.
+    </p>
+
+    <p>
+        Obrigado por cada momento, por sua companhia,
+        por seu carinho e por construir essa história comigo.
+        Ainda temos muitos sonhos para realizar e lembranças
+        lindas para criar.
+    </p>
+
+    <p>
+        Eu escolheria você de novo, em todos os dias
+        e em todas as versões da nossa história.
+    </p>
+
+    <p>
+        Feliz 3 anos para nós. Eu te amo muito! ❤️
+    </p>
+
+    <div class="signature">
+        Com todo meu amor, sempre. ♡
+    </div>
+
+</section>
+
+<section class="ending">
+
+    <div class="heart">♥</div>
+
+    <h2>Por mais mil momentos com você</h2>
+
+    <p>
+        O melhor da minha história é ter você nela.<br>
+        Te amo! 💗
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+    Feito com amor, especialmente para você. ♡
+</footer>
+
+<script>
+const fotos = [
+    "imagens/junhoi.jpeg",
+    "imagens/praia1.jpeg",
+    "imagens/praia2.jpeg",
+    "imagens/studio.jpeg"
+];
+
+const legendas = [
+    "Um pedacinho da nossa história ❤️",
+    "Momentos que nunca vou esquecer",
+    "Minha pessoa favorita 💗",
+    "Sempre quero viver isso com você"
+];
+
+let atual = 0;
+
+function mostrarFoto() {
+    document.getElementById("photo").src = fotos[atual];
+
+    document.getElementById("caption").textContent =
+        legendas[atual];
+}
+
+function next() {
+    atual = (atual + 1) % fotos.length;
+    mostrarFoto();
+}
+
+function previous() {
+    atual = (atual - 1 + fotos.length) % fotos.length;
+    mostrarFoto();
+}
+</script>
+
+</body>
+</html>
